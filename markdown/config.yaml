@@ -1,13 +1,13 @@
 ---
-title: 本のタイトル
-abstract: 本の概要
-circle: サークル名
-author: 本の作者
-comiket: コミケ
-year: 出版年
+title: Silego（シレゴ）社SLG46826試してみたレポート
+abstract: FPGAっぽいPSoCっぽいおもしろ石でＬチカする
+circle: KY技研
+author: _K4ZUKI_
+comiket: 技術書典5（予定）
+year: 2018
 publisher: 印刷会社で印刷製本
 docrevision: "1.0"
-# front: images/front-image.png
+front: "images/computer-lsi.png"
 verbcolored: false
 # rmnote: false
 ...

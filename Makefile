@@ -14,6 +14,6 @@ PROJECT= `pwd`
 
 # CONFIG:= config.yaml
 # INPUT:= TITLE.md
-# TARGET:= TARGET
+ TARGET:= SLG46826TRY
 ##
 include $(MISC)/Makefile
