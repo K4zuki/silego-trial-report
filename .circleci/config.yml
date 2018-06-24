@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: k4zuki/pandocker
+    steps:
+      - checkout
+      - run:
+          name: get submodule
+          command: git submodule update --init
+      - run:
+          name: Make HTML
+          command: make initdir html
+      - run:
+          name: Make PDF
+          command: make initdir pdf
+
+      - run:
+          name: Deploy preparation
+          command: |
+            mkdir deploy
+            mv Out/*.html deploy/`basename Out/*.html .html`-`git rev-parse --short HEAD`.html
+            mv Out/*.pdf deploy/`basename Out/*.pdf .pdf`-`git rev-parse --short HEAD`.pdf
+      - run:
+          name: Deploy
+          command: ghr -replace -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME build-`git rev-parse --short HEAD` deploy/
