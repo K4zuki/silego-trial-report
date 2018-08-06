@@ -13,7 +13,7 @@ SLG46826評価キットからブレッドボード上のLEDを点滅させます
 諸実験を行っており、Linux版・Windows版は試験していません。
 
 <#include "install.md">
-<#include "get_board.md">
 <#include "design.md">
+<#include "get_board.md">
 <#include "blinky.md">
 <#include "tail.md">
