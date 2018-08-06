@@ -30,14 +30,14 @@ Table: 入手先一覧
 今回はDIP変換ボードとDIP書き込みボードを採用します(＊)。一番安い組み合わせだからです。
 2番めに安いのはDIP変換ボードとISPライタで$30ﾎﾟｯｷﾘです。
 
-| 種類                       | 型番（直販ページにリンクしています）                                                              | 直販価格（USD） |
-|:---------------------------|:--------------------------------------------------------------------------------------------------|----------------:|
-| マザーボード               | [SLG4DVKADV](http://www.silego.com/buy/index.php?main_page=product_info&products_id=528)          |          59.000 |
-| ソケットドータボード例     | [SLG46826V-SKT](http://www.silego.com/buy/index.php?main_page=product_info&products_id=719)       |          35.000 |
-| (＊)IC実装済ドータボード例 | [SLG4TA20SP-SLG46826](http://www.silego.com/buy/index.php?main_page=product_info&products_id=722) |          12.000 |
-| (＊)DIP書き込みボード      | [SLG4DVKDIP](http://www.silego.com/buy/index.php?main_page=product_info&products_id=691)          |          24.990 |
-| DIP変換ボード例            | [SLG46826V-DIP](http://www.silego.com/buy/index.php?main_page=product_info&products_id=721)       |           1.250 |
-| ISPライタ                  | [SLG4DVKISP](http://www.silego.com/buy/index.php?main_page=product_info&products_id=727)          |          28.750 |
+| 種類                   | 型番（直販ページにリンクしています）                                                              | 直販価格（USD） |
+|:-----------------------|:--------------------------------------------------------------------------------------------------|----------------:|
+| マザーボード           | [SLG4DVKADV](http://www.silego.com/buy/index.php?main_page=product_info&products_id=528)          |          59.000 |
+| ソケットドータボード例 | [SLG46826V-SKT](http://www.silego.com/buy/index.php?main_page=product_info&products_id=719)       |          35.000 |
+| IC実装済ドータボード例 | [SLG4TA20SP-SLG46826](http://www.silego.com/buy/index.php?main_page=product_info&products_id=722) |          12.000 |
+| (＊)DIP書き込みボード  | [SLG4DVKDIP](http://www.silego.com/buy/index.php?main_page=product_info&products_id=691)          |          24.990 |
+| (＊)DIP変換ボード例    | [SLG46826V-DIP](http://www.silego.com/buy/index.php?main_page=product_info&products_id=721)       |           1.250 |
+| ISPライタ              | [SLG4DVKISP](http://www.silego.com/buy/index.php?main_page=product_info&products_id=727)          |          28.750 |
 
 ## 購入
 
