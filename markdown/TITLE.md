@@ -1,7 +1,7 @@
 # まえがき {-}
 
 この本は、Silego社のIC「SLG46826」でLEDを光らせたレポートです。環境構築、評価キットの購入、
-Ｌチカ回路の設計、設計情報の書き込みを解説する予定です。
+Ｌチカ回路の設計、シミュレーションを解説する予定です。間に合えば実機デバッグページも付きます。
 
 ## この本のゴール {-}
 
@@ -14,6 +14,7 @@ SLG46826評価キットからブレッドボード上のLEDを点滅させます
 
 <#include "install.md">
 <#include "design.md">
+<#include "simulation.md">
 <#include "get_board.md">
-<#include "blinky.md">
+<!--<#include onboard_debug.md>-->
 <#include "tail.md">
