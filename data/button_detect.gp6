@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GPDProject version="8" oldestCompatibleVersion="8" GPDVersion="6.12.003" lastChange="2018/07/21 0:31">
+<GPDProject version="8" oldestCompatibleVersion="8" GPDVersion="6.14.001" lastChange="2018/08/04 3:33">
     <generalProjectSettings/>
     <chip family="04" type="06" friendlyName="GreenPAK 6" partNumber="36" package="7">
         <nvmData registerLenght="2048">42 30 4 AF F4 4E 91 3 44 E 10 39 40 E4 0 2F E5 BF 95 F 0 0 40 C 42 F0 FA CE EB 47 0 70 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 E8 9F FE E2 65 FD D0 FF FC 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 51 51 0 51 51 0 0 0 0 80 DC 5C 0 5C 5C 30 30 30 30 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 14 22 30 C 0 0 0 0 0 0 0 47 74 0 0 8 4 2 1 40 40 6 6 0 0 0 0 3 FF 7F 40 2 4F 0 8 0 2 1 0 0 2 4 1 82 0 54 77 0 0 2 0 1 0 0 2 1 0 0 2 0 1 0 0 2 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 A5</nvmData>
@@ -180,7 +180,7 @@
         </item>
         <LUT id="35" regularShape="0" mode="0">
             <item id="35" caption="2-bit LUT0/DFF/LATCH0">
-                <graphics pos="(-8.85,45.55)" angle="90" flipping="0" hidden="0" tOrigin="(22.29,16.69)"/>
+                <graphics pos="(-6.56,47.24)" angle="90" flipping="0" hidden="0" tOrigin="(20.00,15.00)"/>
             </item>
         </LUT>
         <item id="36" caption="2-bit LUT1/DFF/LATCH1">
@@ -191,7 +191,7 @@
         </item>
         <LUT id="38" regularShape="0" mode="0">
             <item id="38" caption="2-bit LUT3/PGEN">
-                <graphics pos="(1.58,145.42)" angle="90" flipping="0" hidden="0" tOrigin="(22.29,16.69)"/>
+                <graphics pos="(3.87,147.11)" angle="90" flipping="0" hidden="0" tOrigin="(20.00,15.00)"/>
             </item>
         </LUT>
         <LUT id="39" regularShape="0" mode="0">
@@ -214,7 +214,7 @@
         </LUT>
         <LUT id="42" regularShape="0" mode="0">
             <item id="42" caption="3-bit LUT3/DFF/LATCH6">
-                <graphics pos="(381.41,318.08)" angle="90" flipping="0" hidden="0" tOrigin="(20.00,14.44)"/>
+                <graphics pos="(381.41,317.52)" angle="90" flipping="0" hidden="0" tOrigin="(20.00,15.00)"/>
                 <textLabel pos="(-23.44,17.32)" angle="-90.00" textColor="#ffff00ff" backgroundColor="#14141464">00</textLabel>
             </item>
         </LUT>
@@ -255,7 +255,7 @@
         </item>
         <LUT id="54" regularShape="0" mode="0">
             <item id="54" caption="4-bit LUT0 (MF0)">
-                <graphics pos="(33.41,425.17)" angle="90" flipping="0" hidden="0" tOrigin="(22.29,16.69)"/>
+                <graphics pos="(35.70,426.86)" angle="90" flipping="0" hidden="0" tOrigin="(20.00,15.00)"/>
             </item>
         </LUT>
         <item id="55" caption="DFF/LATCH9 (MF0)">
@@ -529,8 +529,8 @@
     <emulatorConfiguration version="1">
         <settings>
             <autoApply value="0"/>
-            <programmingOptions programNVM="1" programEEPROM="0"/>
-            <platformSelector id="3"/>
+            <programmingOptions programNVM="0" programEEPROM="0"/>
+            <platformSelector id="0"/>
         </settings>
         <platform id="0" friendlyName="GreenPAK DIP Development Platform">
             <lastConfiguration>
@@ -547,17 +547,21 @@
                                 </constantVoltageGenerator>
                             </GeneratorOpt>
                         </TPC>
-                        <TPC ID="2" Type="1">
+                        <TPC ID="2" Type="6">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="87" GlobalLink="1"/>
+                            <ButtonSettings UpSide="3" DownSide="0" LatchMode="0" DefaultConnection="0" ConnectedSide="0"/>
                         </TPC>
-                        <TPC ID="3" Type="1">
+                        <TPC ID="3" Type="6">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="69" GlobalLink="1"/>
+                            <ButtonSettings UpSide="3" DownSide="0" LatchMode="0" DefaultConnection="0" ConnectedSide="0"/>
                         </TPC>
-                        <TPC ID="4" Type="1">
+                        <TPC ID="4" Type="6">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="82" GlobalLink="1"/>
+                            <ButtonSettings UpSide="3" DownSide="0" LatchMode="0" DefaultConnection="0" ConnectedSide="0"/>
                         </TPC>
-                        <TPC ID="5" Type="1">
+                        <TPC ID="5" Type="6">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="84" GlobalLink="1"/>
+                            <ButtonSettings UpSide="3" DownSide="0" LatchMode="0" DefaultConnection="0" ConnectedSide="0"/>
                         </TPC>
                         <TPC ID="6" Type="1">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="89" GlobalLink="1"/>
@@ -592,7 +596,7 @@
                             </GeneratorOpt>
                         </TPC>
                         <TPC ID="15" Type="1">
-                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="70" GlobalLink="1"/>
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="71" GlobalLink="1"/>
                         </TPC>
                         <TPC ID="16" Type="1">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="71" GlobalLink="1"/>
@@ -610,6 +614,7 @@
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="76" GlobalLink="1"/>
                         </TPC>
                     </TestPoints>
+                    <I2C slaveAddress="-1"/>
                 </SaveEmulator>
             </lastConfiguration>
             <savedConfigurations/>
@@ -619,7 +624,7 @@
                 <SaveEmulator Name="Unknown">
                     <PowerOptions synced="0"/>
                     <PowerSwitch internalPower="1" externalPower="0"/>
-                    <ExpansionConnector>1:0;2:1;3:1;4:1;5:1;6:0;7:0;8:0;9:0;10:0;11:0;12:1;13:1;14:0;15:1;16:1;17:0;18:0;19:0;20:0</ExpansionConnector>
+                    <ExpansionConnector>1:0;2:0;3:0;4:0;5:0;6:0;7:0;8:0;9:0;10:0;11:0;12:0;13:0;14:0;15:0;16:0;17:0;18:0;19:0;20:0</ExpansionConnector>
                     <TestPoints>
                         <TPC ID="1" Type="8">
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="81" GlobalLink="0"/>
@@ -692,6 +697,7 @@
                             <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="76" GlobalLink="1"/>
                         </TPC>
                     </TestPoints>
+                    <I2C slaveAddress="-1"/>
                 </SaveEmulator>
             </lastConfiguration>
             <savedConfigurations/>
@@ -701,8 +707,80 @@
                 <SaveEmulator Name="Default">
                     <PowerOptions synced="0"/>
                     <PowerSwitch internalPower="1" externalPower="0"/>
-                    <ExpansionConnector></ExpansionConnector>
-                    <TestPoints/>
+                    <ExpansionConnector>1:0;2:0;3:0;4:0;5:0;6:0;7:0;8:0;9:0;10:0;11:0;12:0;13:0;14:0;15:0;16:0;17:0;18:0;19:0;20:0</ExpansionConnector>
+                    <TestPoints>
+                        <TPC ID="1" Type="8">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="81" GlobalLink="0"/>
+                            <GeneratorOpt GenType="5">
+                                <constantVoltageGenerator v="3.299377e+0|4">
+                                    <abstractGenerator repeat="0" repeatCount="0" shownPeriod="0" startPoint="0.000000e+0|5" stopPoint="1.000000e-1|5" pauseState="0" prestartState="1" outputState="0" prestartDelay="0.000000e+0|5" endState="0" link="0" sync="0"/>
+                                </constantVoltageGenerator>
+                            </GeneratorOpt>
+                        </TPC>
+                        <TPC ID="2" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="87" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="3" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="69" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="4" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="82" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="5" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="84" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="6" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="89" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="7" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="85" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="8" Type="4">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="73" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="9" Type="4">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="79" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="10" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="80" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="11" Type="3">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="-1" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="12" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="65" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="13" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="83" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="14" Type="8">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="68" GlobalLink="0"/>
+                            <GeneratorOpt GenType="5">
+                                <constantVoltageGenerator v="3.299377e+0|4">
+                                    <abstractGenerator repeat="0" repeatCount="0" shownPeriod="0" startPoint="0.000000e+0|5" stopPoint="1.000000e-1|5" pauseState="0" prestartState="1" outputState="0" prestartDelay="0.000000e+0|5" endState="0" link="0" sync="0"/>
+                                </constantVoltageGenerator>
+                            </GeneratorOpt>
+                        </TPC>
+                        <TPC ID="15" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="70" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="16" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="71" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="17" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="74" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="18" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="75" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="19" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="76" GlobalLink="1"/>
+                        </TPC>
+                        <TPC ID="20" Type="1">
+                            <BaseOption LEDEnable="0" LEDInvertion="0" HotKey="92" GlobalLink="1"/>
+                        </TPC>
+                    </TestPoints>
+                    <I2C slaveAddress="-1"/>
                 </SaveEmulator>
             </lastConfiguration>
             <savedConfigurations/>
