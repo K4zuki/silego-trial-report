@@ -1,10 +1,12 @@
-# ブツを手に入れよう
+# 評価キットを買ってみた
+
+シミュレーションで動きそうなことはわかったので、しれっとブツを入手します。
 
 ## 入手先
 
 まずはICの評価キットを入手します。Digikey/Mouser/直販の入手ルートがありますが、直販にします。
 Mouserでいっぱい買うものがある人は一緒に買えば送料無料ですね。直販は一律送料15ドルです。ツイッタ情報ではFedExで
-送られてくるようです。以下ツイッタ情報詳細
+送られてくるようです。以下ツイッタ情報一部抜粋
 
 - 注文から発送まではめっちゃ速いらしい（アメリカ西海岸時間の平日に注文しましょう）
 - FedExにしてはゆっくりやってくるらしい（アラスカで飛行機を数日間見送ってたぽいです）
@@ -25,21 +27,17 @@ Table: 入手先一覧
 変換されたドータボードを載せるタイプが挙げられます。マザーボードに載せられるようになっているDIPソケットが付いた
 ドータボードもあります。I2C経由のISPをするためのライタもあります。
 
-今回はDIP変換ボードとDIP書き込みボードを採用します。一番安い組み合わせだからです。
+今回はDIP変換ボードとDIP書き込みボードを採用します(＊)。一番安い組み合わせだからです。
 2番めに安いのはDIP変換ボードとISPライタで$30ﾎﾟｯｷﾘです。
 
-| 種類                   | 型番（直販ページにリンクしています）                                                              | 直販値段（送料別USD） |
-|:-----------------------|:--------------------------------------------------------------------------------------------------|----------------------:|
-| マザーボード           | [SLG4DVKADV](http://www.silego.com/buy/index.php?main_page=product_info&products_id=528)          |                59.000 |
-| ソケットドータボード例 | [SLG46826V-SKT](http://www.silego.com/buy/index.php?main_page=product_info&products_id=719)       |                35.000 |
-| IC実装済ドータボード例 | [SLG4TA20SP-SLG46826](http://www.silego.com/buy/index.php?main_page=product_info&products_id=722) |                12.000 |
-| DIP書き込みボード      | [SLG4DVKDIP](http://www.silego.com/buy/index.php?main_page=product_info&products_id=691)          |                24.990 |
-| DIP変換ボード例        | [SLG46826V-DIP](http://www.silego.com/buy/index.php?main_page=product_info&products_id=721)       |                 1.250 |
-| ISPライタ              | [SLG4DVKISP](http://www.silego.com/buy/index.php?main_page=product_info&products_id=727)          |                28.750 |
-
-## 入手するICの選定
-
-フラッシュタイプで書き換え可能な２品種の中から高機能な方の**SLG46826**にします。^[タイトルだし使わないわけに行かないよね。]
+| 種類                       | 型番（直販ページにリンクしています）                                                              | 直販価格（USD） |
+|:---------------------------|:--------------------------------------------------------------------------------------------------|----------------:|
+| マザーボード               | [SLG4DVKADV](http://www.silego.com/buy/index.php?main_page=product_info&products_id=528)          |          59.000 |
+| ソケットドータボード例     | [SLG46826V-SKT](http://www.silego.com/buy/index.php?main_page=product_info&products_id=719)       |          35.000 |
+| (＊)IC実装済ドータボード例 | [SLG4TA20SP-SLG46826](http://www.silego.com/buy/index.php?main_page=product_info&products_id=722) |          12.000 |
+| (＊)DIP書き込みボード      | [SLG4DVKDIP](http://www.silego.com/buy/index.php?main_page=product_info&products_id=691)          |          24.990 |
+| DIP変換ボード例            | [SLG46826V-DIP](http://www.silego.com/buy/index.php?main_page=product_info&products_id=721)       |           1.250 |
+| ISPライタ                  | [SLG4DVKISP](http://www.silego.com/buy/index.php?main_page=product_info&products_id=727)          |          28.750 |
 
 ## 購入
 
@@ -59,10 +57,11 @@ Shipping and Handling: $15.000
 Total: $42.490
 ```
 
-### 金曜日発送、でも他全部ゆっくりすぎて水曜日配達
+### 配送
+#### 金曜日発送、でも他全部ゆっくりすぎて水曜日配達 {.unnumbered}
 
-ポチったのは金曜日の夜でした。アメリカ西海岸のサンタクララから発送されました。日本が土曜日になってすぐの夜中２時頃に
-発送通知メールが届いたので、おそらく現地時間金曜日の朝イチで処理されたようです。
+ポチったのは金曜日の夜でした。日本が土曜日になってすぐの夜中２時頃に発送通知メールが届いたので、
+おそらく現地時間金曜日の朝イチで処理されたようです。アメリカ西海岸のサンタクララから発送されました。
 
 フェデックス便で送られたんですが、謎の４営業日縛り(?)によって水曜日に到着しました。
 
