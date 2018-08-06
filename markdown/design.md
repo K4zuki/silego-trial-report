@@ -1,5 +1,4 @@
-# 動作をシミュレーションしてみた
-## 回路設計
+# 回路設計してみた
 
 しれっとソフトが入手できたのでＬチカ回路の設計だけしました。
 
@@ -23,7 +22,7 @@
 常時動作させる必要があるものと考えられます]。
 そのあとでVDD/VDD2/GNDピンにチェックを入れます。
 
-### 回路の内容を決める
+## 回路の内容を決める
 
 「ボタンを押している間だけLEDを点滅」させます。
 
@@ -37,7 +36,7 @@
 
 Table: ピン設定
 
-### 部品配置と配線
+## 部品配置と配線
 
 OSC0とPIN5、PIN16にチェックを入れます。[@fig:components-placement-init]のような雰囲気になると思います。
 
@@ -60,7 +59,7 @@ PIN5とOSC0の`FORCE ON`もつなげますが、PIN5のスイッチ入力がチ�
 
 ![配線完了](images/led_blink_after.png){#fig:routing}
 
-### 各ブロックの調整
+## 各ブロックの調整
 
 OSC0の原発振は2048Hz(2.048KHz)で比較的低速ですが、このままではLチカではなくなってしまうので、人間にもわかる程度まで
 (分周して)減速します([@tbl:config-osc0])。IOとフィルタについても
@@ -115,13 +114,3 @@ alignment: CCC
 "Type","FILTER","デフォルト"
 "Output polarity","Inverted (nOUT)",
 ```
-
-## デバッグモードにする
-
-配置配線が終わったのでデバッグします。画面の上の方にある虫と再生マークのボタン([@fig:start-debugger])を押すと
-どのプラットフォームでデバッグするかを聞かれます([@fig:select-platform])。
-SLG46826はシミュレーションに対応している品種なので、シミュレータが選択できます。
-
-![デバッガ起動](images/start_debugger.png){#fig:start-debugger}
-
-![プラットフォーム選択](images/select_debug_platform.png){#fig:select-platform}
