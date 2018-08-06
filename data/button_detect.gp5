@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GPDProject version="8" oldestCompatibleVersion="8" GPDVersion="6.14.001" lastChange="2018/08/04 3:24">
+<GPDProject version="8" oldestCompatibleVersion="8" GPDVersion="6.14.001" lastChange="2018/08/06 16:54">
     <generalProjectSettings/>
     <chip family="04" type="05" friendlyName="GreenPAK 5" partNumber="25" package="4">
-        <nvmData registerLenght="2048">B A 0 11 10 3E 11 28 3E 0 0 0 0 0 0 0 0 0 0 0 0 34 35 38 1 0 0 8 0 0 9 29 3F 2A 0 12 3F D 0 0 C 3F 3F 0 0 0 0 0 0 0 0 0 0 0 0 2F 0 0 0 0 11 E 11 F 38 1 35 1 11 A 3E 11 B 3E B A 0 B A 0 B A 0 1E 0 0 1E 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 C A2 C A2 C0 A6 1C 40 82 C 40 A0 16 2C C C 2C 0 10 CC 60 44 77 0 0 8 4 2 0 0 42 42 0 0 0 0 0 10 0 0 0 60 1 40 40 0 0 0 0 FF 7F 0 0 0 30 24 77 0 0 0 0 0 0 40 59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 92 0 5A 0 0 0 A5</nvmData>
-        <checksum crc32="0x742CE0FB" version="5"/>
+        <nvmData registerLenght="2048">B A 0 11 10 3E 11 28 3E 0 0 0 0 0 0 0 0 0 0 0 0 34 35 38 1 0 0 8 0 0 9 29 3F 2A 0 12 3F D 0 0 C 3F 3F 0 0 0 0 0 0 0 0 0 0 0 0 2F 0 0 0 0 11 E 11 F 38 1 35 1 11 A 3E 11 B 3E B A 0 B A 0 B A 0 1E 0 0 1E 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 C A2 C A2 C0 A6 4 40 82 C 40 A0 16 2C C C 2C 0 10 CC 60 44 77 0 0 8 4 2 0 0 42 42 0 0 0 0 0 10 0 0 0 60 1 40 40 0 0 0 0 FF 7F 0 0 0 30 24 77 0 0 0 0 0 0 40 59 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 92 0 5A 0 0 0 A5</nvmData>
+        <checksum crc32="0xB2E08BB5" version="5"/>
         <asmModel>
             <stateMachine>
                 <asmModel version="2">
@@ -61,7 +61,7 @@
                 <graphics pos="(933.91,321.29)" angle="0" flipping="1" hidden="0" tOrigin="(20.00,10.00)"/>
             </item>
         </IOPad>
-        <IOPad id="6" useCaseMode="0">
+        <IOPad id="6" useCaseMode="1">
             <item id="6" caption="PIN 7">
                 <graphics pos="(86.12,583.00)" angle="90" flipping="3" hidden="1" tOrigin="(20.00,10.00)"/>
             </item>
