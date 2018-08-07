@@ -8,6 +8,6 @@ year: 2018
 publisher: 印刷会社で印刷製本
 docrevision: "1.0"
 front: "images/computer-lsi.png"
-verbcolored: false
+verbcolored: true
 # rmnote: false
 ...

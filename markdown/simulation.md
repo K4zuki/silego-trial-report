@@ -1,4 +1,4 @@
-# シミュレータでデバッグしてみた
+# シミュレータでデバッグしてみた {#sec:sim-debug}
 
 配置配線が終わったのでデバッグします。画面の上の方にある虫と再生マークのボタン([@fig:start-debugger])を押すと
 どのプラットフォームでデバッグするかを聞かれます([@fig:select-platform])。
@@ -22,3 +22,24 @@ PIN16の出力を観察します([@fig:simulation-setup-io])
 
 ![IOセットアップ](images/sim_io_setup.png){#fig:simulation-setup-io}
 
+### 入力信号のセットアップ
+
+PIN5の赤丸アイコンをダブルクリックすると[@fig:sim-input-init]のような画面になります。
+
+![入力信号編集画面（初期状態）](images/simulation_input_init.png){#fig:sim-input-init}
+
+右ペインの一番下がPIN5の波形になっています。この波形を選ぶと左ペインが詳細設定モードになるので
+[@fig:sim-set-waveform]のように変更します。設定したらこの画面を閉じて、メイン外面の右にある
+シミュレーション時間設定を変更します([@fig:sim-duration])。
+
+:::::{#fig:sim-config}
+![波形設定](images/sim_set_waveform.png){#fig:sim-set-waveform width=48%}
+![シミュレーション期間設定](images/sim_duration.png){#fig:sim-duration width=48%}
+
+詳細設定
+:::::
+
+両方を更新したあと[@fig:sim-duration]の左下、"Start Simulation"ボタンをクリックすると
+シミュレーション結果が表示されます([@fig:sim-results])。
+
+![シミュレーション結果](images/simulation_result.png){#fig:sim-results}

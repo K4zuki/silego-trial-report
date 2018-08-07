@@ -71,6 +71,10 @@ OSC0の原発振は2048Hz(2.048KHz)で比較的低速ですが、このままで
 markdown: True
 caption: OSC0の調整 {#tbl:config-osc0}
 alignment: CCC
+witdh: 
+    - 0.4
+    - 0.3
+    - 0.3
 ---
 "Option","Value","Note"
 "Control pin mode","Force on",
@@ -86,6 +90,10 @@ alignment: CCC
 markdown: True
 caption: PIN5の調整 {#tbl:config-pin5}
 alignment: CCC
+witdh: 
+    - 0.4
+    - 0.3
+    - 0.3
 ---
 "Option","Value","Note"
 "I/O Selection","Digital input","配線時に設定済"
@@ -99,6 +107,10 @@ alignment: CCC
 markdown: True
 caption: PIN16の調整 {#tbl:config-pin16}
 alignment: CCC
+witdh: 
+    - 0.4
+    - 0.3
+    - 0.3
 ---
 "Option","Value","Note"
 "I/O Selection","Digital output","配線時に設定済"
@@ -110,6 +122,10 @@ alignment: CCC
 markdown: True
 caption: FILTERの調整 {#tbl:config-filter}
 alignment: CCC
+witdh: 
+    - 0.4
+    - 0.3
+    - 0.3
 ---
 "Option","Value","Note"
 "Type","FILTER","デフォルト"
