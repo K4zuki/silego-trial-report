@@ -3,6 +3,9 @@ Silego SLG46826 trial report from purchase to LED blink
 
 # このリポジトリについて
 
-このリポジトリは~~筆者のTwitterタイムラインでバズっている~~Silego社の”SLG46826”
+このリポジトリは筆者のTwitterタイムラインでバズっているSilego改めDialog Semiconductor社の”SLG46826”
 というICの評価ボード購入からＬチカまでの手順を一通りやってみる・やってみたレポートです。
-~~次のアサシンクリード発売~~技術書典5までに完成させる方針です。
+新刊として夏コミ94に出します。
+
+最新ビルドは[こちら](https://github.com/K4zuki/silego-trial-report/releases/latest)から
+PDFファイルを入手してください。
