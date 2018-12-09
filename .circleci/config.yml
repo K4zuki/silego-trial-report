@@ -2,31 +2,38 @@ version: 2
 jobs:
   build:
     docker:
-      - image: k4zuki/pandocker
+    - image: k4zuki/pandocker
     steps:
-      - checkout
-      - run:
-          name: get submodule
-          command: git submodule update --init
-      - run:
-          name: Prepare QR code for this build
-          command: |
-            make initdir
-            pip3 install qrcode
-            qr https://github.com/K4zuki/silego-trial-report/releases/download/build-`git rev-parse --short HEAD`/SLG46826TRY-`git rev-parse --short HEAD`.pdf > images/QRcode.png
-      - run:
-          name: Make HTML
-          command: make initdir html
-      - run:
-          name: Make PDF
-          command: make initdir pdf
+    - checkout
+    - run:
+        name: get submodule
+        command: git submodule update --init
+    - run:
+        name: Prepare ghr
+        command: |
+          cd build
+          wget -c https://github.com/tcnksm/ghr/releases/download/v0.5.4/ghr_v0.5.4_linux_amd64.zip
+          unzip -e ghr_v0.5.4_linux_amd64.zip
+          cp ./ghr /usr/local/bin
+    - run:
+        name: Prepare QR code for this build
+        command: |
+          make initdir
+          pip3 install qrcode
+          qr https://github.com/K4zuki/silego-trial-report/releases/download/build-`git rev-parse --short HEAD`/SLG46826TRY-`git rev-parse --short HEAD`.pdf > images/QRcode.png
+    - run:
+        name: Make HTML
+        command: make initdir html
+    - run:
+        name: Make PDF
+        command: make initdir pdf
 
-      - run:
-          name: Deploy preparation
-          command: |
-            mkdir deploy
-            mv Out/*.html deploy/`basename Out/*.html .html`-`git rev-parse --short HEAD`.html
-            mv Out/*.pdf deploy/`basename Out/*.pdf .pdf`-`git rev-parse --short HEAD`.pdf
-      - run:
-          name: Deploy
-          command: ghr -replace -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME build-`git rev-parse --short HEAD` deploy/
+    - run:
+        name: Deploy preparation
+        command: |
+          mkdir deploy
+          mv Out/*.html deploy/`basename Out/*.html .html`-`git rev-parse --short HEAD`.html
+          mv Out/*.pdf deploy/`basename Out/*.pdf .pdf`-`git rev-parse --short HEAD`.pdf
+    - run:
+        name: Deploy
+        command: ghr -replace -t $GITHUB_TOKEN -u $CIRCLE_PROJECT_USERNAME -r $CIRCLE_PROJECT_REPONAME build-`git rev-parse --short HEAD` deploy/
