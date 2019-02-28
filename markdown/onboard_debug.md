@@ -43,7 +43,9 @@ PIN16はLED直結でもいいですが、できれば抵抗を介してつなぎ
 青LEDを光らせたままPIN5につないだボタンを押すとPIN16につないだLEDが点滅します([@fig:led-blinky])。
 これでシミュレータと同じ動作が確認できました。
 
-![実機デバッグ](images/debugging_pic.jpg){#fig:led-blinky}
+![実機デバッグ](images/debugging_pic.jpg){#fig:led-blinky height=95mm}
+
+\\newpage
 
 ## おまけ：ボタン入力は省略できるよ
 

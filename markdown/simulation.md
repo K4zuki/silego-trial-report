@@ -22,6 +22,8 @@ PIN16の出力を観察します([@fig:simulation-setup-io])
 
 ![IOセットアップ](images/sim_io_setup.png){#fig:simulation-setup-io}
 
+\\newpage
+
 ### 入力信号のセットアップ
 
 PIN5の赤丸アイコンをダブルクリックすると[@fig:sim-input-init]のような画面になります。
@@ -31,6 +33,8 @@ PIN5の赤丸アイコンをダブルクリックすると[@fig:sim-input-init]�
 右ペインの一番下がPIN5の波形になっています。この波形を選ぶと左ペインが詳細設定モードになるので
 [@fig:sim-set-waveform]のように変更します。設定したらこの画面を閉じて、メイン外面の右にある
 シミュレーション時間設定を変更します([@fig:sim-duration])。
+
+\\newpage
 
 :::::{#fig:sim-config}
 ![波形設定](images/sim_set_waveform.png){#fig:sim-set-waveform width=48%}
